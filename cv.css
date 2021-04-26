@@ -3,10 +3,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 
+
+
 }
+ #myWelcome{
+     width: 100%;
+       text-align: center;
+      font-size: 3vw;
+     color: hotpink;
+
+ }
 .goTo{
      grid-area: goTo;
-     background-color: var(--pink);
+    background-color: var(--pink);
      width: 100%;
      border: gray solid 2px;
      padding: 20px;
@@ -46,7 +55,7 @@
 
 }
 h2 {
-    background-color: var(--misty-rose);
+  background-color: var(--misty-rose);
     padding: 15px;
 }
 h1{
@@ -62,4 +71,12 @@ h1{
 @keyframes myName {
     from{ color: var(--champagne-pink)}
     to{color: hotpink}
+}
+button{
+    background-color :var(--pink);
+}
+.mailToMe{
+   background-color:var(--pale-pink);
+    width: 100%;
+
 }

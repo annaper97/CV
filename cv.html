@@ -2,25 +2,28 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="cv.css">
+  <script src="cv.js ">  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cv - Anna Pertzovski </title>
+  <title> cv - Anna Pertzovski </title>
+
 </head>
-<body>
+<body onload="WelcomeText()">
+ <div id="myWelcome"> </div>
 <div class="name" style="font-size: 5vw"> Anna Pertzovski </div>
 <div class="goTo" style="font-size: 2vw"> <h1> Go To: </h1>
-     <a href="#about" style="font-size: 2vw" >About Me </a> &nbsp;
+     <a href="#about"  >About Me </a> &nbsp;
     <a href="#education">Education</a> &nbsp;
     <a href="#workExperience">Work Experience </a>&nbsp;
     <a href="#military">Military Service </a>&nbsp;
 </div>
 <div class="contactDitails"> <h1> Contact Me: </h1>
   <img src="myPicture.jpeg" alt="my picture" style="width: 50%">
-    <h3> My linkedin:</h3>
-    <a href="https://www.linkedin.com/in/anna-pertzovski/"> Anna Pertzovski</a>
-     <h3> My Phone Number:</h3>
-    <a href="tel:+0547252304"> 0547252304 </a>
-    <h3> My Email:</h3>
-    <a href="mailto: pertzovski.anna@gmail.com" > pertzovski.anna@gmail.com </a>
+    <h3><button onclick="Buttonsanna()">  To My linkedin:</button> </h3>
+    <a  id="Anna_Pertzovski" href="https://www.linkedin.com/in/anna-pertzovski/"> </a>
+     <h3> <button onclick="Buttonsphone()"> To My Phone Number:</button> </h3>
+    <a  id="phone" href="tel:+0547252304">  </a>
+    <h3> <button onclick="Buttonsemail()"> To My Email:</button> </h3>
+    <a  id="myemail" href="mailto: pertzovski.anna@gmail.com" > </a>
 
   </div>
   <div class="content" >
@@ -42,6 +45,22 @@ I have knowledge in several programing languages and motivation to learn and dev
 <br> * Course Sergeant- Management the logistic, schedules and guide a Class commander.
 <br> * Course commander -Personnel and soldiers management as a career solder.
 </div>
-       </div>
+ </div>
+
+
+<span> </span>
+  <form action="mailto:annaper@post.bgu.ac.il" method="post" enctype="text/plain">
+        <h3 style="font-size: 3vw"> contact Form: </h3>
+        <label for="name"> Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message"> your massage :</label><br>
+        <textarea name="message" id="message" cols="100" rows="4"></textarea><br>
+            <input type="submit" value="Send" >
+            <input type="reset" value="Reset">
+
+      </form>
+</span>
 </body>
 </html>
